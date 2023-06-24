@@ -1,0 +1,115 @@
+<body><br><br><br><br>
+  <div id="text"><h4><b>HANDCRAFTED CURATION</b></h4></div>
+        <div class="row">
+          <div class="card" style="width: 13rem;">
+            <img src="../../assets/7.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Bestseller</h5>
+            </div>
+          </div>
+  
+          <div class="card" style="width: 13rem;">
+            <img src="../../assets/1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Drinks</h5>
+            </div>
+          </div>
+  
+          <div class="card" style="width: 13rem;">
+            <img src="../../assets/2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Food</h5>
+            </div>
+          </div>
+          <div class="card" style="width: 13rem;">
+            <img src="../../assets/3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Merchandise</h5>
+            </div>
+          </div>
+  
+          <div class="card" style="width: 13rem;">
+            <img src="../../assets/13.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Coffee at home</h5>
+            </div>
+          </div>
+  
+        </div>
+  
+  <br><br><br><br>
+  <div id="text"><h4><b>PRODUCTS</b></h4></div>
+  <div class="row">
+    <div class="card" style="width: 17rem;" *ngFor="let data of product | async" >
+      <img src="{{data.imageUrl}}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{data.productName}}</h5>
+        <p>Product Price:&#8377; {{data.productPrice}}</p>
+        <p class="card-text">{{data.productDescription}}</p>
+        <a routerLink="/order" class="btn">Order Now</a>
+        <br><br><br>
+      </div>
+      
+    </div>
+  
+  </div>
+  
+  <br><br><br>
+  <br><br><br></body>
+  
+    <footer>
+      <div class="footer">
+        <div class="contain">
+        <div class="col">
+          <h2>Company</h2>
+          <ul>
+            <li>About us</li>
+            <li> Our Mission</li>
+            
+          </ul>
+        </div>
+        <div class="col">
+          <h2>Products</h2>
+          <ul>
+            <li>Drinks</li>
+            <li>Food</li>
+            <li>Merchandise</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h2>Services</h2>
+          <ul>
+            <li>Delivery</li>
+            <li>Customer Service</li>
+            <li>Season's Gifting</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h2>Resources</h2>
+          <ul>
+            <li>Webmail</li>
+            <li>Web templates</li>
+            <li>Email templates</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h2>Contact</h2>
+          <ul>
+            <li>+91 9051 XXXXXX</li>
+            <li>033 2464 XXXX</li>
+            <li>beanncoffee@gmail.com</li>
+          </ul>
+        </div>
+        <div class="col address">
+          <h2>Address </h2>
+          <ul>
+            <li>Mangalore</li>
+        </ul>
+        </div>
+      <div class="clearfix"></div>
+      </div>
+      </div>
+      </footer>
+      
+  
+  

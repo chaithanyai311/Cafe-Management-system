@@ -1,0 +1,46 @@
+<body><h2 style="text-align: center; margin-top: 50px;"><b>Update Product</b></h2><br><br>
+    <form class="form"(ngSubmit) ="onSubmit()">
+    
+        <table width="70%">
+            <tr>
+                <td><label>Product ID</label></td>
+                <td><input type="text" name="productId" id="productId" [(ngModel)]="updateproduct.productId"/></td>
+            </tr>
+    
+            <tr>
+                <td><label>Product Name</label></td>
+                <td><input type="text" name="productName" id="productName" [(ngModel)]="updateproduct.productName"/></td>
+            </tr>
+    
+            <tr>
+                <td><label>Product Price</label></td>
+                <td><input type="text" name="productPrice" id="productPrice" [(ngModel)]="updateproduct.productPrice"/></td>
+            </tr>
+    
+            <tr>
+                <td><label>Product Description</label></td>
+                <td><input type="text" name="productDescription" id="productDescription" [(ngModel)]="updateproduct.productDescription"/></td>
+            </tr>
+    
+            <tr>
+                <td><label>Product Url</label></td>
+                <td><input type="text" name="imageUrl" id="imageUrl" [(ngModel)]="updateproduct.imageUrl"/></td>
+            </tr>
+    
+            <tr>
+                <td><label>Category Id</label></td>
+                <td><input type="text" name="categoryId" id="categoryId" [(ngModel)]="updateproduct.categoryId"/></td>
+            </tr>
+    
+        </table>
+        <br>
+        <button type="submit" >Update </button>
+
+        <a routerLink="/display"><button class="btn1">Back</button></a>
+    
+    
+         </form>
+
+
+</body>
+

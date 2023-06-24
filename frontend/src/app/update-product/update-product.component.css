@@ -1,0 +1,47 @@
+form{
+    background-color: #F5DADA;
+    padding-left: 400px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+h2{
+    text-align: center;
+    padding-top: 20px;
+    font-family: "Times New Roman";
+}
+
+tr{
+    padding-bottom: 10px;
+}
+
+button{
+    background-color: #DA4D9A;
+    color: white;
+    border-radius: 5%;
+    border-width: 0cm;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 70px;
+}
+button:hover{
+    opacity: 0.5;
+}
+
+body {font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../../assets/login.jpg);
+    background-size: 100% 600px;
+    background-repeat: no-repeat;
+    padding-bottom: 350px;
+    padding-top: 10px;
+    
+}
+
+span{
+    float: right;
+    padding-right: 50px;
+}

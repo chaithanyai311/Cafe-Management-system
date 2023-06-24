@@ -1,0 +1,26 @@
+<body>
+<section>
+    <h2>Admin Login</h2>
+    <br>
+    
+    <form   method=" ">
+      <div class="imgcontainer">
+        
+      </div>
+    
+      <div class="container">
+        <label  ><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="username" [(ngModel)]="model.username"   />
+    
+        <label  ><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password" [(ngModel)]="model.password"  />
+            
+        <button  (click)="loginUser()">Login</button>
+        
+        <label>Login as User! </label> <a routerLink="/login">Login</a>
+      </div>
+    
+      <div class="container" style="background-color:#F8E9E9">
+      </div>
+    </form>
+    </section>

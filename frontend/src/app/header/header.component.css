@@ -1,0 +1,29 @@
+li{
+    color: #8B3C7F;
+    float: left;
+    font-size: 20px;
+    padding-right: 35px;
+
+}
+
+
+ul{
+    list-style-type: none;
+    
+}
+.card{
+    margin-left: 100px;
+}
+
+a{
+    text-decoration: none;
+    color: #8B3C7F;
+    background-color: transparent;
+    text-decoration: underline;
+    text-decoration: none;
+}
+a:hover{
+    color:rgb(6, 6, 6) ;
+    background-color:transparent;
+    text-decoration: underline;
+}

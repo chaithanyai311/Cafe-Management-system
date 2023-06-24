@@ -1,0 +1,90 @@
+
+<nav class="navbar" style="background-color: #F5DADA;">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="../../assets/logo.png" alt="" width="120px" height="70px">
+    </a>
+    <ul style="font-style: italic;">
+      <li><a routerLink="">Hello, Admin</a></li>
+  
+      <li><a routerLink="">Logout</a></li>
+    </ul>
+  </div>
+</nav>
+<body class="body">
+
+      <a routerLink="/display"><button class="btn1">Back</button></a>
+      <div class="row">
+        <div class="card" style="width: 14rem;" *ngFor="let data of product | async" >
+          <img src="{{data.imageUrl}}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{data.productName}}</h5>
+            <p>Product Price:&#8377; {{data.productPrice}}</p>
+            <p class="card-text">{{data.productDescription}}</p>
+            <!-- <a routerLink="/order" class="btn">Order Now</a> -->
+          </div>
+          <button (click)="deleteProductById(data.productId)">Delete Product</button>
+          <br><br><br>
+        </div>
+      
+      </div>
+      
+
+<br><br><br>
+<br><br><br></body>
+
+  <footer>
+    <div class="footer">
+      <div class="contain">
+      <div class="col">
+        <h2>Company</h2>
+        <ul>
+          <li>About us</li>
+          <li> Our Mission</li>
+          <li>Services</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h2>Products</h2>
+        <ul>
+          <li>Drinks</li>
+          <li>Food</li>
+          <li>Merchandise</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h2>Team</h2>
+        <ul>
+          <li>HR Team</li>
+          <li>Finance Team</li>
+          <li>Content Team</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h2>Resources</h2>
+        <ul>
+          <li>Webmail</li>
+          <li>Web templates</li>
+          <li>Email templates</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h2>Contact</h2>
+        <ul>
+          <li>+91 9051 XXXXXX</li>
+          <li>033 2464 XXXX</li>
+          <li>beanncoffee@gmail.com</li>
+        </ul>
+      </div>
+      <div class="col address">
+        <h2>Address </h2>
+        <ul>
+          <li>Mangalore</li>
+      </ul>
+      </div>
+    <div class="clearfix"></div>
+    </div>
+    </div>
+    </footer>
+    
+
